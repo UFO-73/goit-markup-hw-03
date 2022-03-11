@@ -11,6 +11,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -41,21 +48,64 @@ body {
 }
 
 /* Header */
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+/* .nav-list .nav-item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.nav-list .nav-item + .nav-item {
+  margin-left: 50px;
+}
+
 .nav-item a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--heading-text-color);
+
   text-decoration: none;
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
+
 .nav-item a:hover,
 .nav-item a:focus {
   color: var(--accent-color);
 }
 
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list .contact-item + .contact-item {
+  margin-left: 50px;
+}
+
 .contact-item a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--text-color);
+
   text-decoration: none;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -121,7 +171,15 @@ body {
 
 /* Main */
 
+/* description */
+
+.description {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .description-title {
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -155,8 +213,28 @@ body {
   line-height: 1.87;
 }
 
-.work-title,
+/* Work */
+
+.work {
+  padding-bottom: 94px;
+}
+
+.work-title {
+  margin-bottom: 50px;
+}
+
+/* Team */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+
+.taem .work-title,
 .team-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -211,4 +289,9 @@ body {
 .footer-contact,
 .footer-location {
   font-style: normal;
+}
+
+.footer-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
