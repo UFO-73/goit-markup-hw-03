@@ -31,7 +31,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Logo */
@@ -247,6 +247,8 @@ img {
 }
 
 .example-title {
+  margin-bottom: 4px;
+
   color: var(--heading-text-color);
   font-size: 18px;
   line-height: 2;
@@ -261,10 +263,25 @@ img {
 .example-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
 }
 
-.example-list > .example-item {
-  flex-basis: calc(100% / 3);
+.example-item {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.example-list > .contact-item {
+  flex-basis: calc((100% - 60px) / 4);
+}
+
+.ex-box {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-top: none;
 }
 
 /* Work */
@@ -383,12 +400,4 @@ img {
 .footer-box {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.example-item * {
-  outline: 1px solid tomato;
-}
-
-img {
-  display: block;
 }
